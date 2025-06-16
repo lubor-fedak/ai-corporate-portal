@@ -22,6 +22,16 @@
     <script type="module" crossorigin src="/ai-corporate-portal/assets/index-DhqtdIuF.js"></script>
     <link rel="stylesheet" crossorigin href="/ai-corporate-portal/assets/index-DFi_qmOA.css">
   </head>
+  
+  <script>
+  // Ak sme na /ai-corporate-portal/ (t.j. nie je tam hash)
+  if (
+    window.location.pathname === '/ai-corporate-portal/' &&
+    window.location.hash === ''
+  ) {
+    window.location.replace('/ai-corporate-portal/#/');
+  }
+</script>
 
   <body>
     <div id="root"></div>
